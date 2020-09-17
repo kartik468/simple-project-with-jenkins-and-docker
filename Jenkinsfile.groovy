@@ -19,16 +19,16 @@ pipeline {
         }
         stage('Staging') {
             steps {
-                sh 'sudo docker-compose build'
-                sh 'sudo docker-compose up -d'
+                sh 'docker-compose build'
+                sh 'docker-compose up -d'
             }
         }
-        stage('end2end Tests') {
-            steps {
-                dir("server/") {
-                    sh 'mvn test -Dtest=SeleniumSuite'
-                }
-            }
-        }
+        // stage('end2end Tests') {
+        //     steps {
+        //         dir("server/") {
+        //             sh 'mvn test -Dtest=SeleniumSuite'
+        //         }
+        //     }
+        // }
     }
 }
