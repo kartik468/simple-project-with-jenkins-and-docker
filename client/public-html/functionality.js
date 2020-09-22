@@ -90,7 +90,7 @@ function noteRequest(method, body, extension) {
 
 
 function httpRequest(method, endpoint, callback, headers, body){
-    let URL = "http://" + location.host + ":8081/";
+    let URL = "http://" + location.hostname + ":8081/";
     let request = new XMLHttpRequest();
     console.log(URL + endpoint)
     request.open(method, URL + endpoint);
