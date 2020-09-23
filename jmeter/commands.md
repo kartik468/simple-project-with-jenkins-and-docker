@@ -3,12 +3,15 @@
 # run jmeter
 jmeter -n -t examples\kartik\FirstTest.jmx -l examples\kartik\first_test_result.jtl
 
-jmeter -n -t FirstTest.jmx -l first_test_result.jtl
+jmeter -n -t FirstTest.jmx -l logs\first_test_result.jtl
+
+jmeter -n -t FirstTest_updated.jmx -l log\first_test_updated_log1.jtl
+
 
 
 # run backend
 cd server
-java -jar notes.jar
+java -jar target/notes.jar
 
 # apis
 # get notes : [TO DO]

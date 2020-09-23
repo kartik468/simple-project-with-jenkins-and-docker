@@ -1,0 +1,71 @@
+jsr223_rt_as_hist
+the response time for a jsr223 sampler
+label
+HISTOGRAM
+100,500,1000,3000
+samples
+ResponseTime
+---------------------------------
+jsr223_rt_as_summary
+the response time for a jsr223 sampler
+category,label,code
+SUMMARY
+0.75,0.5|0.95,0.1|0.99,0.01
+samples
+ResponseTime
+---------------------------------
+jsr223_count_total
+the total number of samplers
+label
+COUNTER
+
+samples
+CountTotal
+---------------------------------
+jsr223_success_total
+the total number of successful samplers
+label
+COUNTER
+
+samples
+SuccessTotal
+---------------------------------
+jsr223_rsize_as_hist
+the response size for a jsr223 sampler
+
+HISTOGRAM
+100,500,1000,3000
+samples
+ResponseSize
+---------------------------------
+jsr223_can_fail
+success ratio of the can_fail_sampler
+
+SUCCESS_RATIO
+
+samples
+SuccessRatio
+---------------------------------
+jsr223_latency_as_hist
+the latency (ttfb) for a jsr223 sampler
+label
+HISTOGRAM
+100,500,1000,3000
+samples
+Latency
+---------------------------------
+jsr223_idle_time
+the idle time for a jsr223 sampler
+
+SUMMARY
+0.75,0.5|0.95,0.1|0.99,0.01
+samples
+IdleTime
+---------------------------------
+jsr223_assertions
+default help string
+label
+SUCCESS_RATIO
+
+assertions
+SuccessRatio
